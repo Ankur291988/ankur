@@ -1,0 +1,23 @@
+package utility;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Test {
+	private static XSSFWorkbook ExcelWbook;
+	private static XSSFSheet ExcelWsheet;
+	private static XSSFRow Row;
+	private static XSSFCell Cell;
+	public static void main(String[] args) {
+		FileInputStream fis = new FileInputStream(Path);
+		ExcelWbook = new XSSFWorkbook(fis);
+		ExcelWsheet = ExcelWbook.getSheetAt(0);	
+		// TODO Auto-generated method stub
+
+	}
+
+}

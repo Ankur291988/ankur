@@ -1,0 +1,27 @@
+package util;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class NewTest {
+	WebDriver driver;
+  @Test
+  public void f() {
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  System.setProperty("webdriver.gecko.driver","C:\\Selenium\\geckodriver-v0.11.1-win64\\geckodriver.exe");
+		WebDriver driver =new FirefoxDriver();
+		String url = "http://toolsqa.com/automation-practice-form/";
+		driver.get(url);
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  driver.close();
+  }
+
+}

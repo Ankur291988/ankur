@@ -1,0 +1,22 @@
+package Concepts;
+
+public class overriding {
+	
+	public void eat(){
+		System.out.println("Overloading Started");
+	}
+}
+class newoverriding extends overriding{
+	public void eat(){
+		System.out.println("Overloading Started");
+	}
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		overriding obj = new overriding();
+		obj.eat();
+	}
+
+}

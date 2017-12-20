@@ -1,0 +1,22 @@
+package utility;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import utility.ExcelUtil;
+public class Login {
+
+	public static void main(String[] args) throws Exception {
+		try{
+		
+		String Username = ExcelUtil.getCelldata(2,1);
+		String Lastname = ExcelUtil.getCelldata(2,2);
+		System.out.println(Username +" "+Lastname );
+		}catch(Exception e){
+			throw(e);
+		}
+		
+		
+		
+	}
+
+	}

@@ -1,0 +1,18 @@
+package Concepts;
+
+public class constructor {
+ private int i;
+ public constructor(){
+	 i=10;
+	  }
+ public constructor(int j){
+	 i=j;}
+public int getValue(){
+	return i;}
+public static void main(String[] args){
+		constructor obj = new constructor();
+		obj.getValue();
+		System.out.println(+obj.getValue());
+	}
+}
+

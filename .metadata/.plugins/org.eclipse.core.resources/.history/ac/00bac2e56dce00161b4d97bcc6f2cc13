@@ -1,0 +1,13 @@
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class javaTeat {
+    public static void main(String[] args) {
+        try{
+            System.setProperties("webdriver.gecko.driver","C:\\Selenium\\geckodriver-v0.11.1-win64\\geckodriver.exe");
+        	FirefoxDriver driver = new FirefoxDriver();
+            driver.get("http:www.yahoo.com");
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+}

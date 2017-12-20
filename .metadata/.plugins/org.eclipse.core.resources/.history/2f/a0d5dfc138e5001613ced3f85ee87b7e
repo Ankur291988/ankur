@@ -1,0 +1,23 @@
+package Concepts;
+
+public class constructor {
+ private int i;
+ public constructor(){
+	 i=10;
+	  }
+ public constructor(int j){
+	 i=j;}
+ public constructor(int j,char c){
+	 i=j;
+	 char z=c;}
+public int getValue(){
+	return i;
+	return z;}
+public static void main(String[] args){
+		constructor obj = new constructor(77,A);
+		obj.getValue();
+		System.out.println(+obj.getValue());
+		
+	}
+}
+

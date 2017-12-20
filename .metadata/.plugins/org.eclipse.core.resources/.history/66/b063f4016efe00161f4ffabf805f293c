@@ -1,0 +1,25 @@
+package utility;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import utility.ExcelUtil;
+public class Login {
+
+	public static void main(String args[]) throws Exception{
+		try{
+			ExcelUtil.setExcel("C:\\Users\\Ankur\\Desktop\\TestData.xlsx");
+			String Username = ExcelUtil.getCelldata(1, 1);
+			String Password = ExcelUtil.getCelldata(1, 2);
+			System.out.println(Username);
+			System.out.println(Password);
+		}catch(Exception e){
+			throw(e);
+		}
+	}
+	
+		
+		
+		
+	}
+
+	

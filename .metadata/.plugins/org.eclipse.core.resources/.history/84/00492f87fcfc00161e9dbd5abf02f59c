@@ -1,0 +1,43 @@
+package selpac;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestPrac {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver","C:\\Selenium\\geckodriver-v0.11.1-win64\\geckodriver.exe");
+		WebDriver driver =new FirefoxDriver();
+		String url = "http://toolsqa.wpengine.com/automation-practice-form/";
+		driver.get(url);
+		List<WebElement> obj = driver.findElements(By.name("sex"));
+		boolean bvalue= obj.get(0).isSelected();
+		if(bvalue== false)
+		{
+			obj.get(0).click();
+		}
+		List<WebElement> obj1 = driver.findElements(By.name("profession"));
+		
+		int count= obj1.size();
+		for(int i=0;i<count;i++){
+			String Svalue = obj1.get(i).getAttribute("value");
+			if (Svalue.equalsIgnoreCase("Automation Tester")) {
+				System.out.println("Found");
+				obj1.get(i).click();
+				break;
+			}
+			
+			
+			}
+		}
+		
+		
+		
+
+	}
+
+

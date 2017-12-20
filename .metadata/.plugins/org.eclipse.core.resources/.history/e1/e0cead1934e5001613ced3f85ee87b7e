@@ -1,0 +1,18 @@
+package Concepts;
+
+class overriding {
+			public void eat(){
+				System.out.println("Human is eating");
+			}
+}
+class Man extends overriding{
+	public void eat(){
+				System.out.println("Man is eating");
+			}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Man obj = new Man();
+obj.eat();
+	}
+
+}
